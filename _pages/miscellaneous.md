@@ -18,11 +18,11 @@ author_profile: true
 
 ### Teaching Assistant
 
-* C Programing, Winter, 2021
-* Fundamentals of Data Structures, Winter, 2020
+* C Programing, Winter, 2020
+* Fundamentals of Data Structures, Winter, 2021
 
 ### Interests
 
-:soccer: and Piano :+1:
+Football and Piano
 
 
