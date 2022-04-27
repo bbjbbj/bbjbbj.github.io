@@ -1,22 +1,41 @@
 ---
-layout: archive
+layout: single
+permalink: /
+author_profile: true
 ---
 
-{{ content }}
+{{content}}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h1 id="about" class="page__title">About Me</h1>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+<p>  I received my Bachelor and Master’s degree in Computer Science in 2016 and 2019 respectively, both from Nanjing University of Science and Technology (supervised by Prof. <a href="https://dblp.org/pid/14/7280.html" target="_blank"> Huaijiang Sun</a>). Currently I am a Ph.D. student in the State Key Lab of CAD&CG, Zhejiang University, co-supervised by Prof. <a href="https://youyizheng.net/" target="_blank">Youyi Zheng</a> and Prof. <a href="http://xzhou.me/" target="_blank">Xiaowei Zhou</a>.
+</p>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
-</div>
+<p> My research mainly focuses on image manipulation, 3D human modeling and animation.
+</p>
 
-{% include paginator.html %}
+
+<h2 id="publications" class="page__title">Publications</h2>
+
+<ul>
+    <li>
+      OrthoAligner: Image-based Teeth Alignment Prediction via Latent Style Manipulation 
+        <br> <b>Beijia Chen</b>, Hongbo Fu, Kun Zhou, Youyi Zheng
+        <br> IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022
+    </li>
+    <li>
+      Single-image Human-body Reshaping with Deep Neural Networks
+        <br> <b>Beijia Chen</b>, Hongbo Fu, Xiang Chen, Kun Zhou, Youyi Zheng
+        <br> Arxiv
+    </li>
+    <li>
+      TeethGNN: Semantic 3D Teeth Segmentation with Graph Neural Networks
+        <br> Youyi Zheng*, <b>Beijia Chen*</b>, Yuefan Shen, Kaidi Shen ( * equal contribution)
+        <br> IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022
+    </li>
+    <li>
+      Human Bas-Relief Generation from A Single Photograph
+        <br> Zhenjie Yang*, <b>Beijia Chen*</b>, Youyi Zheng, Xiang Chen ( * equal contribution)
+        <br> IEEE Transactions on Visualization and Computer Graphics (TVCG), 2021
+    </li>
+</ul>
